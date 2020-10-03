@@ -154,8 +154,8 @@ if __name__ == "__main__":
         app.run(debug=False,
                 host="localhost",
                 port=sys.argv[1],
-                reloader=True,
-                # server="gunicorn",
+                reloader=False,
+                server="gunicorn",
                 workers=4)
 
     else:

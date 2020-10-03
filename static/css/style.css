@@ -26,11 +26,14 @@ html {
 
 body {
     color: var(--color);
-    display: grid;
     font: var(--font-size) var(--font-family);
+	text-rendering: optimizeLegibility;
+}
+
+#wrapper {
+    display: grid;
     grid-gap: var(--padding-unit);
     grid-template-columns: 1fr 4fr;
-	text-rendering: optimizeLegibility;
 }
 
 

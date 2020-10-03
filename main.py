@@ -155,7 +155,7 @@ if __name__ == "__main__":
                 host="localhost",
                 port=sys.argv[1],
                 reloader=False,
-                server="gunicorn",
+                # server="gunicorn",
                 workers=4)
 
     else:

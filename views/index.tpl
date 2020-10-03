@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<div id="wrapper">
+
 <div id="menu">
 <ul>
 % for master in masters:
@@ -40,6 +42,8 @@
 %end
 </tbody>
 </table>
+
+</div>
 
 <script src="static/js/index.umd.min.js"></script>
 <script>

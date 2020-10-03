@@ -6,7 +6,7 @@ import sys
 import urllib.request
 
 
-DIR_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+DIR_ROOT = os.path.abspath(os.path.dirname(__file__))
 DIR_DATA = os.path.join(DIR_ROOT, "data")
 DIR_ICS = os.path.join(DIR_DATA, "ics")
 DIR_STATIC = os.path.join(DIR_ROOT, "static")
@@ -49,9 +49,13 @@ TIME_BEFORE_OUTDATED = 4 * 60 * 60
 
 NAME = "cal.sorbonne.su"
 
-ROOT_URL = "https://cal.sorbonne.su/"
+ROOT_URL = "http://localhost:8080"
+# ROOT_URL = "https://cal.sorbonne.su/"
+# ROOT_URL = "https://cale.sorbonne.su/"
 
-DEFAULT_URL = "https://cal.sorbonne.su/M1+M2"
+DEFAULT_URL = "http://localhost:8080/M1+M2"
+# DEFAULT_URL = "https://cal.sorbonne.su/M1+M2"
+# DEFAULT_URL = "https://cale.sorbonne.su/M1+M2"
 
 
 # ATTRIBUTES = (

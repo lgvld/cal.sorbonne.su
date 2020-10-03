@@ -49,7 +49,9 @@ TIME_BEFORE_OUTDATED = 4 * 60 * 60
 
 NAME = "cal.sorbonne.su"
 
-DEFAULT_SELECTED_MASTERS = "M1+M2"
+ROOT_URL = "https://cal.sorbonne.su/"
+
+DEFAULT_URL = "https://cal.sorbonne.su/M1+M2"
 
 
 # ATTRIBUTES = (

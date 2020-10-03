@@ -120,7 +120,7 @@ def static(path):
 
 @app.get("/")
 def default():
-    bottle.redirect(config.DEFAULT_SELECTED_MASTERS)
+    bottle.redirect(config.DEFAULT_URL)
 
 
 @app.get("/<str>")

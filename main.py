@@ -110,7 +110,7 @@ def get_events(masters, begin_after=time.time()):
 ###############################################################################
 
 
-app = bottle.default_app()
+app = application = bottle.default_app()
 
 
 @app.get("/static/<path:path>")

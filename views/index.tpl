@@ -28,7 +28,6 @@
 <th>🎪 what?</th>
 <th>🪂 where?</th>
 <th>⏳ when?</th>
-<th>⏰ ok... but when?</th>
 </tr>
 </thead>
 <tbody>
@@ -36,8 +35,7 @@
 <tr>
 <td>{{ event.name }}</td>
 <td>{{ event.location if event.location else "-" }}</td>
-<td>{{ event.begin.humanize(locale="en") }}</td>
-<td>{{ event.begin.format('YYYY-MM-DD HH:mm') }}</td>
+<td>{{ event.begin.format('YYYY-MM-DD HH:mm') }} ({{ event.begin.humanize(locale="en") }})</td>
 </tr>
 %end
 </tbody>
@@ -47,12 +45,21 @@
 
 <script src="static/js/index.umd.min.js"></script>
 <script>
+
+window.onhashchange = function() {
+  if (window.location.hash == "#hide-menu") {
+    document.querySelector("#wrapper").style.gridTemplateColumns = "1fr";
+    document.querySelector("#menu").style.display = "none";
+  }
+}
+
 const ptr = PullToRefresh.init({
   mainElement: 'body',
   onRefresh() {
     window.location.reload();
   }
 });
+
 </script>
 
 </body>

@@ -126,7 +126,7 @@ def default():
 @app.get("/<str>")
 def index(str=""):
 
-    selected_masters = [m for m in str.split("+") if m in MASTERS]
+    selected_masters = list(set([m for m in str.split("+") if m in MASTERS]))
 
     # selected_masters.sort()
 

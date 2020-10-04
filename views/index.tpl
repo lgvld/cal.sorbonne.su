@@ -46,12 +46,19 @@
 <script src="static/js/index.umd.min.js"></script>
 <script>
 
-window.onhashchange = function() {
+function toggleMenu() {
   if (window.location.hash == "#hide-menu") {
     document.querySelector("#wrapper").style.gridTemplateColumns = "1fr";
     document.querySelector("#menu").style.display = "none";
+  } else {
+    document.querySelector("#wrapper").style.gridTemplateColumns = "1fr 4fr";
+    document.querySelector("#menu").style.display = "block";
   }
 }
+
+toggleMenu();
+
+window.onhashchange = toggleMenu;
 
 const ptr = PullToRefresh.init({
   mainElement: 'body',

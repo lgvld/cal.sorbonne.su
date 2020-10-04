@@ -4,7 +4,8 @@
 <title>{{ title }}</title>
 <meta charset="utf-8">
 <meta name="robots" content="noindex">
-<link href="static/css/style.css" rel="stylesheet">
+<!-- <link href="static/css/style.css" rel="stylesheet"> -->
+<link href="static/css/style.min.css" rel="stylesheet">
 </head>
 <body>
 

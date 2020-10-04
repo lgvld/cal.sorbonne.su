@@ -46,6 +46,13 @@
 <script src="static/js/index.umd.min.js"></script>
 <script>
 
+const ptr = PullToRefresh.init({
+  mainElement: 'body',
+  onRefresh() {
+    window.location.reload();
+  }
+});
+
 function toggleMenu() {
   if (window.location.hash == "#hide-menu") {
     document.querySelector("#wrapper").style.gridTemplateColumns = "1fr";
@@ -59,13 +66,6 @@ function toggleMenu() {
 toggleMenu();
 
 window.onhashchange = toggleMenu;
-
-const ptr = PullToRefresh.init({
-  mainElement: 'body',
-  onRefresh() {
-    window.location.reload();
-  }
-});
 
 </script>
 

@@ -20,7 +20,7 @@ html {
     --font-family: monospace;
     --font-size: 1.8rem;
     /*--line-height: 1.5;*/
-    --padding-unit: .4rem;
+    --padding-unit: .5rem;
 }
 
 
@@ -38,7 +38,7 @@ body {
 
 
 #menu ul {
-    padding: calc(8 * var(--padding-unit)) 0;
+    padding: calc(5 * var(--padding-unit)) 0;
 }
 
 #menu ul li {
@@ -81,9 +81,10 @@ body {
 }
 
 #events th {
-    padding: calc(1.5 * var(--padding-unit)) var(--padding-unit);
+    padding: calc(2.5 * var(--padding-unit)) var(--padding-unit);
 }
 
 #events tr td {
+    border: 0;
     padding: calc(.75 * var(--padding-unit)) var(--padding-unit);
 }

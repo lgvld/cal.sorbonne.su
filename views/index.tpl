@@ -44,15 +44,16 @@
 
 </div>
 
-<script src="static/js/index.umd.min.js"></script>
+<!-- <script src="static/js/index.umd.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.20/index.umd.min.js" integrity="sha512-P5gzVTkY5AyMpwWEMaX9lnqzRdVF1x+YjUeAmOT+xGVxhe28aJz4qHZEY+HyTNcs4Xmt89D/wbCltIvSTzlscA==" crossorigin="anonymous"></script>
 <script>
 
-const ptr = PullToRefresh.init({
-  mainElement: 'body',
-  onRefresh() {
-    window.location.reload();
-  }
-});
+// const ptr = PullToRefresh.init({
+//   mainElement: 'body',
+//   onRefresh() {
+//     window.location.reload();
+//   }
+// });
 
 function toggleMenu() {
   if (window.location.hash == "#hide-menu") {

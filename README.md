@@ -1,4 +1,4 @@
-# new (i.e. better) web calendar @ cal.louis.ga
+# new (i.e. better) web calendar @ cal.sorbonne.su 📅
 
 alternative to: https://cal.ufr-info-p6.jussieu.fr/master/
 
